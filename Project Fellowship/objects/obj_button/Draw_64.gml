@@ -11,7 +11,7 @@ draw_set_font(text);
 for(i = 0; i < array_length_1d(buttons); i++)
 {
 	
-	draw_rectangle(button_x, button_y, button_x+button_xscale, button_y+button_yscale, 0);
+	draw_rectangle_color(button_x, button_y, button_x+button_xscale, button_y+button_yscale, c_gray,c_gray,c_gray,c_gray, 0);
 	
 	if(within(button_x, button_x+button_xscale, mG_x))
 	{
@@ -47,7 +47,7 @@ ui_x = 300;
 for(i = 0; i < ds_list_size(target_list); i++)
 {
 	local_adv = ds_list_find_value(target_list, i);
-	draw_rectangle_color(ui_x-10, ui_y, (ui_x+550),(ui_y+75), c_gray,c_gray,c_gray,c_gray, 0); ui_y+=5;
+	draw_rectangle_color(ui_x-10, ui_y, (ui_x+500),(ui_y+75), c_gray,c_gray,c_gray,c_gray, 0); ui_y+=5;
 	
 	button_x = 660;
 	button_y = ui_y + 5;

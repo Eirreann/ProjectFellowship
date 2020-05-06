@@ -18,6 +18,8 @@ new_adv = instance_create_layer(0,0, "Instances", Adventurer);
 	
 	choice = round(random_range(0, ds_list_size(name_list)-1));
 	new_adv.name = ds_list_find_value(name_list, choice);
+	
+	show_debug_message(ds_list_size(name_list));
 //
 
 //Determine Class

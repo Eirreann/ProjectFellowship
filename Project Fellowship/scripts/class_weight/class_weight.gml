@@ -37,6 +37,13 @@ switch(argument0)
 		class_obj.dex_w = 10;
 		class_obj.int_w = 30;
 		break;
+	case "Occultist":
+		class_obj.hp_w = 25;
+		class_obj.mp_w = 28;
+		class_obj.str_w = 15;
+		class_obj.dex_w = 10;
+		class_obj.int_w = 32;
+		break;
 }
 
 return class_obj;

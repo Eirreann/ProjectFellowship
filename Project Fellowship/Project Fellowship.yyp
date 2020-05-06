@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "25ea1439-6edb-4ad9-b3c3-322ed44c1bfd",
+            "Value": {
+                "id": "9b98a71f-9a8a-4955-8fc1-3626548f5acf",
+                "resourcePath": "datafiles_yy\\names_m.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "2b9e6ec9-59a1-45f3-9f9f-b8f86746195a",
             "Value": {
                 "id": "425aa36e-dfa5-427a-a90d-3f40b07370b4",
@@ -223,10 +231,10 @@
             }
         },
         {
-            "Key": "9f9d5aae-e0da-436d-a810-6e0dc685f4ba",
+            "Key": "9c8bd668-479e-436a-b99c-111db486818b",
             "Value": {
-                "id": "e42308f0-761f-4c47-b48b-e310434868bf",
-                "resourcePath": "datafiles_yy\\names_female.txt.yy",
+                "id": "cd5369f7-ac64-4b03-9085-df91c032f748",
+                "resourcePath": "datafiles_yy\\names_f.txt.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -268,14 +276,6 @@
                 "id": "b8a5877b-00c0-45d0-b124-d681d4c82fab",
                 "resourcePath": "sprites\\sprite3\\sprite3.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "c013d080-e57b-49b4-a29b-7be1de69a3e8",
-            "Value": {
-                "id": "a60ff8ae-85b4-4199-a576-ee8e1cebb348",
-                "resourcePath": "datafiles_yy\\names_male.txt.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {

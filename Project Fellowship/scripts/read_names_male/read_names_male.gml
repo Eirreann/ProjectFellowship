@@ -5,7 +5,7 @@ ad_names = ds_list_create();
 
 i = 0;
 
-file = file_text_open_read("names_male.txt");
+file = file_text_open_read("names_m.txt");
 
 if(file != -1)
 {
