@@ -1,5 +1,5 @@
-max_reputation = 50000;
-reputation = max_reputation;
+max_reputation = 100000;
+reputation = 100000;
 
 event_user(0);
 

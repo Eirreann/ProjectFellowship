@@ -87,7 +87,7 @@ for(i = 0; i < ds_list_size(target_list); i++)
 	draw_set_halign(fa_left);
 	
 	
-	draw_text_outlined(ui_x,ui_y,c_black,c_white, string(local_adv.name) + " " + string(local_adv.gender) + ": " + string(local_adv.class), 1); ui_y += 20;
+	draw_text_outlined(ui_x,ui_y,c_black,c_white, string(local_adv.name) + " " + string(local_adv.gender) + ": " + string(local_adv.class.name) + "   Level: " + string(local_adv.level), 1); ui_y += 20;
 	
 	stat_text = "HP: " + string(local_adv.hp) + ", ";
 	stat_text += "MP: " + string(local_adv.mp) + ", ";
@@ -96,7 +96,7 @@ for(i = 0; i < ds_list_size(target_list); i++)
 	
 	stat_text = "Dex: " + string(local_adv.dex) + ", ";
 	stat_text += "Int: " + string(local_adv.int) + ", "; 
-	stat_text += "BST: " + string(local_adv.hp + local_adv.mp + local_adv.str + local_adv.dex + local_adv.int);
+	stat_text += "Faith: " + string(local_adv.fth);
 	draw_text_outlined(ui_x,ui_y,c_black,c_white, string(stat_text), 1); ui_y += 45;
 	
 }
