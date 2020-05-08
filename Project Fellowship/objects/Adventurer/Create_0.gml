@@ -13,3 +13,6 @@ fth = 0; //Faith
 skl = 0; //Skill
 
 clickable = false;
+
+_av_points = 30;
+
