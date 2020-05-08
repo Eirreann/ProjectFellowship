@@ -1,4 +1,4 @@
-class_obj = instance_create_layer(0,0,"Instances", Class);
+var class_obj = instance_create_layer(0,0,"Instances", Class);
 
 var _name = argument0;
 var _HP_w = argument1;

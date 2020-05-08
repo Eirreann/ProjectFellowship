@@ -1,0 +1,1 @@
+click_handler.hover_id = noone;

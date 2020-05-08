@@ -13,7 +13,7 @@ ds_grid_set_region(grid_, 0, 0, width_, height_, VOID);
 var _controller_x = width_ div 2;
 var _controller_y = height_ div 2;
 var _controller_direction = irandom(3);
-var _steps = 450;
+var _steps = 250;
 
 var _direction_change_odds = 1;
 
@@ -74,6 +74,7 @@ for(var _y = 1; _y < height_ -1; _y++)
 			var _south_tile = grid_[# _x, _y+1] == VOID;
 			
 			var _tile_index = NORTH*_north_tile + WEST*_west_tile + EAST*_east_tile + SOUTH*_south_tile + 1;
+			
 			if (_tile_index == 1)
 			{
 				grid_[# _x, _y] = FLOOR;	

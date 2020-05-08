@@ -7,3 +7,5 @@ dex_w = 0;
 int_w = 0;
 fth_w = 0;
 skl_w = 0;
+
+clickable = false;

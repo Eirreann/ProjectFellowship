@@ -1,8 +1,8 @@
 {
-    "id": "ad1d6937-62ce-4ed0-a325-572c02b574f8",
+    "id": "a205eb0a-de57-4bdf-9207-5cc0bbb64941",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "new_class",
+    "name": "save_game",
     "IsCompatibility": false,
     "IsDnD": false
 }

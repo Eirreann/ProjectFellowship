@@ -1,14 +1,6 @@
 Aamir
 Aaron
-Abbey
-Abbie
 Abbot
-Abbott
-Abby
-Abdel
-Abdul
-Abdulkarim
-Abdullah
 Abe
 Abel
 Abelard
@@ -64,6 +56,7 @@ Alfonso
 Alfonzo
 Alford
 Alfred
+Allan
 Alonso
 Alonzo
 Aloysius
@@ -727,10 +720,6 @@ Emmott
 Emmy
 Emory
 Ender
-Engelbart
-Engelbert
-Englebart
-Englebert
 Enoch
 Enrico
 Enrique
