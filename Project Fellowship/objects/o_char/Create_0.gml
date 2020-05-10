@@ -3,4 +3,4 @@ _target_y = noone;
 
 moving = false;
 
-clickable = true;
+tag = "pc";

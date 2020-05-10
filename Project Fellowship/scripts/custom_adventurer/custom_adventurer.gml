@@ -13,8 +13,8 @@ new_adv.class = ds_list_find_value(class_list, a_class);
 
 //Determine Stats
 //
-	stat_points = round((20000 / 100) * a_level);
-	stat_variance = 2.5;
+	stat_points = round((10000 / 100) * a_level);
+	stat_variance = 1.2;
 	adv_class_obj = new_adv.class;
 	
 	new_adv.hp = round((stat_points / 100) * adv_class_obj.hp_w);

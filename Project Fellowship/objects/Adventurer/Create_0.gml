@@ -12,7 +12,7 @@ int = 0; //Intelligence
 fth = 0; //Faith
 skl = 0; //Skill
 
-clickable = false;
+tag = "class";
 
-_av_points = 30;
+_av_points = 50;
 

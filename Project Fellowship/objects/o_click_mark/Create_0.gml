@@ -1,1 +1,1 @@
-clickable = false;
+tag = "effect";

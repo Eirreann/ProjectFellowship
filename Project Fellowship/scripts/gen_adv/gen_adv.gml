@@ -32,8 +32,8 @@ new_adv = instance_create_layer(0,0, "Instances", Adventurer);
 
 //Determine Stats
 //
-	stat_points = round((20000 / 100) * argument0);
-	stat_variance = 2.5;
+	stat_points = round((10000 / 100) * argument0);
+	stat_variance = 1.2;
 	adv_class_obj = new_adv.class;
 	
 	new_adv.hp = round((stat_points / 100) * adv_class_obj.hp_w);

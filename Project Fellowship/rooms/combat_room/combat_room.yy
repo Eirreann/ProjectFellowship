@@ -1,6 +1,6 @@
 
 {
-    "name": "debug_room",
+    "name": "combat_room",
     "id": "cc9e142b-203c-4070-9a86-25c0f4f6076c",
     "creationCodeFile": "",
     "inheritCode": false,

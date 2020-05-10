@@ -85,6 +85,7 @@ for(i = 0; i < ds_list_size(target_list); i++)
 		draw_rectangle_color(button_x, button_y, button_x+100, button_y+55, c_black,c_black,c_black,c_black, 1);
 	
 		draw_set_halign(fa_center);
+		
 		if(btn_id == "recruit")
 			draw_text_outlined(button_x + (button_xscale/2), button_y + (button_yscale/3), c_black, text_color, "Hire", 1);
 		else

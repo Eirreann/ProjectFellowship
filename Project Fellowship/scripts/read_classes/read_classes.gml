@@ -3,7 +3,7 @@ classes = ds_list_create();
 //ds_list_add(classes, new_class("class_name"), HP, MP, Str, Dex, Int, Fth, Skl));
 
 //Special Classes
-ds_list_add(classes, new_class("Wanderer", 30, 30, 30, 30, 30, 30, 30)); //0
+ds_list_add(classes, new_class("Wanderer", 25, 25, 25, 25, 25, 25, 25)); //0
 
 //Melee Classes
 ds_list_add(classes, new_class("Warrior", 40, 10, 65, 25, 10, 10, 20)); //1
