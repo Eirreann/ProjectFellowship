@@ -14,10 +14,14 @@ new_adv = instance_create_layer(0,0, "Instances", Adventurer);
 		name_list = read_names_female();
 		new_adv.gender = "(F)";
 	}
-
+	
+	surname_list = read_surnames();
 	
 	choice = round(random_range(0, ds_list_size(name_list)-1));
 	new_adv.name = ds_list_find_value(name_list, choice);
+	
+	choice = round(random_range(0, ds_list_size(surname_list)-1));
+	new_adv.surname = ds_list_find_value(surname_list, choice);
 //
 
 //Determine Class

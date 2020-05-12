@@ -1,4 +1,6 @@
 name = "";
+surname = "";
+
 class = "";
 gender = "";
 

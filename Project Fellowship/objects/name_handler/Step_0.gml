@@ -4,7 +4,7 @@ if(confirm && string_length(keyboard_string) > 0)
 {
 	character_name = keyboard_string;
 	keyboard_string = "";
-	room_goto(stat_room);
+	room_goto(dialogue_test);
 }
 
 if ( string_length(keyboard_string) < limit) 

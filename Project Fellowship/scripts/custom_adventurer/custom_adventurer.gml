@@ -1,11 +1,13 @@
 new_adv = instance_create_layer(0,0, "Instances", Adventurer);
 
 new_adv.name = argument0;
-a_class = argument1;
-a_level = argument2;
+new_adv.surname = argument1;
+
+a_class = argument2;
+a_level = argument3;
 new_adv.level = a_level;
 
-new_adv.gender = argument3;
+new_adv.gender = argument4;
 
 //Get Class
 class_list = read_classes();

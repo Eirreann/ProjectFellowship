@@ -1,10 +1,10 @@
-if (cursor == "")
+if (t_cursor == "")
 {
-	cursor = "|";
+	t_cursor = "|";
 }
 else
 {
-	cursor = "";
+	t_cursor = "";
 }
 
 alarm_set(0, 25);

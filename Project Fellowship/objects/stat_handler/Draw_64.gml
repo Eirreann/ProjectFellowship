@@ -11,7 +11,7 @@ txt_scale = 1.0;
 
 adv = ds_list_find_value(adventurers, adv_index);
 
-draw_text_outlined(start_x, start_y, c_black, text_color, adv.name + " : " + adv.gender, txt_scale); start_y += 15;
+draw_text_outlined(start_x, start_y, c_black, text_color, adv.name + " " + adv.surname + " : " + adv.gender, txt_scale); start_y += 15;
 draw_text_outlined(start_x, start_y, c_black, text_color, adv.class.name, txt_scale); start_y += spacing;
 draw_text_outlined(start_x, start_y, c_black, text_color, "Spent Points: " + string(points_spent), txt_scale); start_y += 15;
 draw_text_outlined(start_x, start_y, c_black, text_color, "Available Points: " + string(adv._av_points), txt_scale); start_y += spacing*2.8;
@@ -36,33 +36,10 @@ button_yscale = 55;
 button_x = 25;
 button_y = start_y + 20;
 
-draw_rectangle(button_x, button_y, button_x+button_xscale, button_y+button_yscale, 0);
-draw_rectangle_color(button_x, button_y, button_x+button_xscale, button_y+button_yscale, c_black,c_black,c_black,c_black, 1);
-
-if within(button_y, button_y+button_yscale, mG_y)
+if(do_button(button_x, button_y, button_xscale, button_yscale, "Apply"))
 {
-	if(within(button_x, button_x+button_xscale,mG_x))
-	{ 
-		text_color = c_green;
-		
-		if(mouse_check_button_pressed(mb_left))
-		{
-			event_user(1);
-		}
-	}
-	else 
-	{ 
-		text_color = c_white; 
-	}
+	event_user(1);	
 }
-else
-{
-	text_color = c_white;	
-}
-
-draw_set_halign(fa_center);
-draw_text_outlined(button_x + (button_xscale / 2), button_y + (button_yscale/3), c_black, text_color, "Apply", 1);
-draw_set_halign(fa_left);
 
 //Reset Button
 button_xscale = 250;
@@ -173,5 +150,4 @@ for(i = 0; i < 7; i++)
 		text_color = c_white;
 	
 	draw_text_outlined(button_x + 65, button_y, c_black, text_color, string(spent_per_stat[adv_index, i]), 1);
-
 }

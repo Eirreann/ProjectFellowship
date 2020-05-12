@@ -10,7 +10,6 @@ draw_set_font(text);
 
 for(i = 0; i < array_length_1d(buttons); i++)
 {
-	
 	draw_rectangle_color(button_x, button_y, button_x+button_xscale, button_y+button_yscale, c_gray,c_gray,c_gray,c_gray, 0);
 	
 	if(within(button_x, button_x+button_xscale, mG_x))
@@ -94,7 +93,7 @@ for(i = 0; i < ds_list_size(target_list); i++)
 		draw_set_halign(fa_left);
 	
 	
-		draw_text_outlined(ui_x,ui_y,c_black,c_white, string(local_adv.name) + " " + string(local_adv.gender) + ": " + string(local_adv.class.name) + "   Level: " + string(local_adv.level), 1); ui_y += 20;
+		draw_text_outlined(ui_x,ui_y,c_black,c_white, string(local_adv.name) + " " + string(local_adv.surname) + " " + string(local_adv.gender) + ": " + string(local_adv.class.name) + "   Level: " + string(local_adv.level), 1); ui_y += 20;
 	
 		stat_text = "HP: " + string(local_adv.hp) + ", ";
 		stat_text += "MP: " + string(local_adv.mp) + ", ";

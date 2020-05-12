@@ -15,7 +15,7 @@ ds_grid_set_region(grid_, 0, 0, width_, height_, VOID);
 var _controller_x = width_ div 2;
 var _controller_y = height_ div 2;
 var _controller_direction = irandom(3);
-var _steps = 500;
+var _steps = 750;
 
 var _direction_change_odds = 1;
 

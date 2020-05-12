@@ -1,2 +1,2 @@
-draw_text_outlined(25, 25, c_black, c_white, "Enter the wanderer's name: " + string(name) + cursor, 1);
+draw_text_outlined(25, 25, c_black, c_white, "Enter the wanderer's name: " + string(name) + t_cursor, 1);
 draw_text_outlined(25, 65, c_black, c_white, "Character limit is " + string(string_length(keyboard_string))+ ".", 1);

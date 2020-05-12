@@ -1,4 +1,4 @@
-cursor = "";
+t_cursor = "";
 name = "";
 
 globalvar character_name;

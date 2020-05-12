@@ -1,3 +1,5 @@
+mouse_down = mouse_check_button(mb_left);
+
 _up = keyboard_check(ord("W"));
 _left = keyboard_check(ord("A"));
 _down = keyboard_check(ord("S"));
@@ -22,11 +24,11 @@ if _camboost
 else
 	scrl_spd = 5;
 
-cam_xScale = res_points * 16;
-cam_yScale = res_points * 9;
+cam_xScale = res_points * v_aspect;
+cam_yScale = res_points * h_aspect;
 
 
-if _zoomup && res_points > 40
+if _zoomup && res_points > 30
 {
 	res_points--;
 }
@@ -63,4 +65,3 @@ if _right && (cam_xPos + cam_xScale) < room_width- offset
 	
 camera_set_view_pos(camera, cam_xPos, cam_yPos);
 camera_set_view_size(camera, cam_xScale, cam_yScale);
-
