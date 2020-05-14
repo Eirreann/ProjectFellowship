@@ -15,7 +15,7 @@ draw_rectangle_color(button_xPos, button_yPos, button_xPos+button_xScale, button
 			{
 				return true;
 			}
-			text_color = c_yellow;
+			text_color = c_green;
 		}
 		else
 		{

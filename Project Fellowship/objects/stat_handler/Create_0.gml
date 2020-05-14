@@ -1,7 +1,7 @@
 adventurers = ds_list_create();
 randomise();
 
-ds_list_add(adventurers, custom_adventurer(character_name, "", 0, 25, "(F)"));
+ds_list_add(adventurers, custom_adventurer(character_name, "", 0, 25, character_gender));
 ds_list_add(adventurers, custom_adventurer("Mallory", "Allbelle", 4, 25, "(F)"));
 ds_list_add(adventurers, custom_adventurer("Damarro", "Keggburn", 1, 25, "(M)"));
 ds_list_add(adventurers, custom_adventurer("Velvet", "Merriwether", 5, 25, "(F)"));

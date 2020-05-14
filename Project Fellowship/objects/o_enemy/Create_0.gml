@@ -1,1 +1,1 @@
-tag = "npc";
+tag = "enemy";

@@ -1,3 +1,6 @@
+mG_x = device_mouse_x_to_gui(0);
+mG_y = device_mouse_y_to_gui(0);
+
 with(all) 
 {
 	//Mouse in bounds
@@ -80,11 +83,13 @@ else
 			grabbed_object = hover_id;
 		}
 	}
-	else
+	else if left_click && hover_id == noone
 	{
-		grabbed_object = noone;
-		
 		origin_x = mouse_x;
 		origin_y = mouse_y;
+		grabbed_object = noone;
+	}
+	else
+	{
 	}
 }

@@ -47,33 +47,10 @@ button_yscale = 27.5;
 button_x = 25;
 button_y = start_y + 80;
 
-draw_rectangle(button_x, button_y, button_x+button_xscale, button_y+button_yscale, 0);
-draw_rectangle_color(button_x, button_y, button_x+button_xscale, button_y+button_yscale, c_black,c_black,c_black,c_black, 1);
-
-if within(button_y, button_y+button_yscale, mG_y)
+if(do_button(button_x, button_y, button_xscale, button_yscale, "Reset"))
 {
-	if(within(button_x, button_x+button_xscale,mG_x))
-	{ 
-		text_color = c_green;
-		
-		if(mouse_check_button_pressed(mb_left))
-		{
-			event_user(2);
-		}
-	}
-	else 
-	{ 
-		text_color = c_white; 
-	}
+	event_user(2);	
 }
-else
-{
-	text_color = c_white;	
-}
-
-draw_set_halign(fa_center);
-draw_text_outlined(button_x + (button_xscale / 2), button_y + (button_yscale/3) - 5, c_black, text_color, "Reset", 1);
-draw_set_halign(fa_left);
 
 
 
@@ -87,60 +64,26 @@ for(i = 0; i < 7; i++)
 	button_x = start_x;
 	button_y = start_y;
 	
-	if within(button_y, button_y+button_yscale, mG_y)
+	if(do_button(button_x, button_y, button_xscale, button_yscale, "-"))
 	{
-		if(within(button_x, button_x+button_xscale,mG_x))
-		{ 
-			text_color = c_green;
-			if(mouse_check_button_pressed(mb_left))
-			{
-				choice = i;
-				amount = -stat_bump;
-				sp_pnt = -1;
-				event_user(0);
-			}
-		}
-		else 
-		{ 
-			text_color = c_white; 
-		}
-	}
-	else
-	{
-		text_color = c_white;	
+		choice = i;
+		amount = -stat_bump;
+		sp_pnt = -1;
+		event_user(0);	
 	}
 	
-	draw_rectangle(button_x, button_y, button_x+button_xscale, button_y+button_yscale, 0); 
-	draw_text_outlined(button_x + 5, button_y, c_black, text_color, "-", 1);
 	button_x += spacing;
 	
-	if within(button_y, button_y+button_yscale, mG_y)
+	if(do_button(button_x, button_y, button_xscale, button_yscale, "+"))
 	{
-		if(within(button_x, button_x+button_xscale,mG_x))
-		{ 
-			text_color = c_green;
-			
-			if(mouse_check_button_pressed(mb_left))
-			{
-				choice = i;
-				amount = stat_bump;
-				sp_pnt = 1;
-				event_user(0);
-			}
-		}
-		else 
-		{ 
-			text_color = c_white; 
-		}
-	}
-	else
-	{
-		text_color = c_white;	
+		choice = i;
+		amount = stat_bump;
+		sp_pnt = 1;
+		event_user(0);	
 	}
 	
-	draw_rectangle(button_x, button_y, button_x+button_xscale, button_y+button_yscale, 0); 
-	draw_text_outlined(button_x + 5, button_y, c_black, text_color, "+", 1);
-	button_x -= spacing; start_y += spacing;
+	button_x -= spacing; 
+	start_y += spacing;
 	
 	
 	
