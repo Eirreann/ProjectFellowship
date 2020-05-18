@@ -1,4 +1,13 @@
 //draw_text_outlined(x, y, outline color, string color, string, size)  
+
+///@args x
+///@args y
+///@args outline color
+///@args fill color
+///@args string
+///@args size
+
+
 var xx,yy,size;  
 xx = argument[0];  
 yy = argument[1];  

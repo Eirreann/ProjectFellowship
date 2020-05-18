@@ -23,5 +23,12 @@ if local_focus != noone
 			local_focus = noone;
 		}
 		
+		if local_focus.tag == "enemy"
+		{
+			path_end();
+			show_debug_message("Let's Fight!");
+			local_focus = noone;
+		}
+		
 	}
 }

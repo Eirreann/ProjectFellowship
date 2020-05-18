@@ -22,10 +22,12 @@ new_adv.class = ds_list_find_value(class_list, a_class);
 	new_adv.hp = round((stat_points / 100) * adv_class_obj.hp_w);
 	hp_per = (new_adv.hp / 100) * stat_variance;
 	new_adv.hp += round(random_range(-hp_per, hp_per));
+	new_adv.curr_hp = new_adv.hp;
 	
 	new_adv.mp = round((stat_points / 100) * adv_class_obj.mp_w);
 	mp_per = (new_adv.mp / 100) * stat_variance;
 	new_adv.mp += round(random_range(-mp_per, mp_per));
+	new_adv.curr_mp = new_adv.mp;
 	
 	new_adv.str = round((stat_points / 100) * adv_class_obj.str_w);
 	str_per = (new_adv.str / 100) * stat_variance;

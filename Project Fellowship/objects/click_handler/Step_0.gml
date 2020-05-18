@@ -36,6 +36,8 @@ if(grabbed_object != noone)
 	}
 	else if left_click && hover_id == noone
 	{
+		origin_x = mouse_x;
+		origin_y = mouse_y;
 		grabbed_object = noone;
 	}
 	
@@ -91,5 +93,6 @@ else
 	}
 	else
 	{
+		
 	}
 }
